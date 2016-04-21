@@ -1,5 +1,3 @@
-console.log("I'm connected");
-var map;
 require([
   "esri/map",
   "esri/arcgis/utils",
