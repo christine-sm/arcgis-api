@@ -1,0 +1,10 @@
+body {
+  text-align: center;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+#mapDiv {
+  max-width: 40em;
+  border-radius: 1em;
+  margin: 0 auto;
+}
