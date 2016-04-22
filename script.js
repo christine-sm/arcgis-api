@@ -10,6 +10,7 @@ require([
 });
 
 $(document).ready(function () {
+  //Object for Info Button
   var info = {
     modal: $("#modal"),
     button: $("#modal-button"),
@@ -25,6 +26,7 @@ $(document).ready(function () {
   });
 
   $(document).keyup(function(e){
+    //Closes modal when esc key is pressed
     if (e.keyCode === 27){
       info.modal.css("display", "none");
     }
