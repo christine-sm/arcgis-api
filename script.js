@@ -8,3 +8,25 @@ require([
       map = response.map;
   });
 });
+
+$(document).ready(function () {
+  var info = {
+    modal: $("#modal"),
+    button: $("#modal-button"),
+    close: $("#close")
+  };
+
+  info.button.on("click", function(){
+    info.modal.css("display", "block");
+  });
+
+  info.close.on("click", function(){
+    info.modal.css("display", "none");
+  });
+
+  $(document).keyup(function(e){
+    if (e.keyCode === 27){
+      info.modal.css("display", "none");
+    }
+  });
+});
